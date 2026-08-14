@@ -6,7 +6,7 @@ import os
 pygame.init()
 
 WIDTH, HEIGHT = 400, 700
-screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN | pygame.SCALED)
+screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN)
 pygame.display.set_caption("Parkur Kaç")
 clock = pygame.time.Clock()
 
