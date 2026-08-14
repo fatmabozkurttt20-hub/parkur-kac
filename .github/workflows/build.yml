@@ -28,6 +28,7 @@ jobs:
       - name: Build with buildozer
         run: |
           export ACLOCAL_PATH=/usr/share/aclocal
+          export JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
           yes | buildozer android debug
 
       - name: Upload APK
