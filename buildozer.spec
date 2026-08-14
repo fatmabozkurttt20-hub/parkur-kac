@@ -5,7 +5,7 @@ package.domain = org.oyunum
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3==3.10.13,pygame
+requirements = python3==3.10.13,hostpython3==3.10.13,pygame
 orientation = portrait
 fullscreen = 0
 
