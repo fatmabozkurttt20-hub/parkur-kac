@@ -21,9 +21,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y git zip unzip openjdk-17-jdk python3-pip autoconf automake libtool libtool-bin autopoint gettext pkg-config zlib1g-dev libncurses5-dev cmake libffi-dev libssl-dev
 
-      - name: Install buildozer
+      - name: Build with buildozer
         run: |
-          pip install --upgrade buildozer cython
+          export ACLOCAL_PATH=/usr/share/aclocal
+          yes | buildozer android debug
+ cython
 
       - name: Build with buildozer
         run: |
